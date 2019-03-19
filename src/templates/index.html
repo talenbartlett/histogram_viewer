@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Upload CSV</title>
+  </head>
+  <body>
+    <h1>Upload CSV to show histogram</h1>
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value="Submit File">
+    </form>
+    {% if hist_img_path %}
+      <img src="{{ hist_img_path }}"/>
+    {% endif %}
+  </body>
+</html>
